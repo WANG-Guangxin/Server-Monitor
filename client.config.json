@@ -1,0 +1,7 @@
+{
+    "id": "111",
+    "server_ip": "127.0.0.1",
+    "port": 6789,
+    "aes_key": "1234567890abcdef",
+    "log_level": 0
+}
