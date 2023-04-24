@@ -443,7 +443,7 @@ void Client::run()
             log_str << "成功发送 " << ret << " 字节数据" ;
             LOG_INFO(log_str.str());
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(2500));
+        std::this_thread::sleep_for(std::chrono::milliseconds(5000));
     }
 
     // 关闭套接字
