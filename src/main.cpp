@@ -1,11 +1,10 @@
 #include <iostream>
-#include "nlohmann/json.hpp"
-#include "log.h"
-#include "utils.h"
+#include <unistd.h>
+
 #include "server.h"
 #include "client.h"
 
-using json = nlohmann::json;
+
 
 int main()
 {
