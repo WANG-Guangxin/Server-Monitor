@@ -4,15 +4,17 @@
 
 ### 库依赖
 
-1. OpenSSL
 > sudo apt install build-essential
-> 
+
+1. OpenSSL
+
 > sudo apt install openssl libssl-dev
 
 2. nlohmann/json.hpp
 
 3. curl
-> sudo apt install curl
+
+> sudo apt install libcurl4-openssl-dev
 
 ### 目录结构
 
