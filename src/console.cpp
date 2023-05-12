@@ -184,13 +184,13 @@ void Console::print_client_data(const srvmon::Client_data& client_data)
     std::cout << std::endl;
 
     std::cout << " Mem:  " ;
-    progress_bar(client_data.mem_used/client_data.mem_total);
+    progress_bar(client_data.mem_used / client_data.mem_total * 100);
     std::cout << std::fixed << std::setprecision(2) << " " << client_data.mem_used << "/"
               << client_data.mem_total << "MB  ";
     std::cout << std::endl;
 
     std::cout << " Disk: ";
-    progress_bar(client_data.disk_used/client_data.disk_total); 
+    progress_bar(client_data.disk_used / client_data.disk_total * 100); 
     std::cout << std::fixed << std::setprecision(2) << " " << client_data.disk_used << "/"
               << client_data.disk_total << "GB  ";
     std::cout << std::endl;
