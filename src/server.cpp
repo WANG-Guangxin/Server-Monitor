@@ -20,6 +20,10 @@ Server_monitor::Server_monitor(const std::string& config_file_name)
         client_data.server_name = server_config_.servers.at(i).name;
         client_data.cpu_number = 0;
         client_data.process_number = 0;
+        client_data.mem_used = 0;
+        client_data.mem_total = -1;
+        client_data.disk_used = 0;
+        client_data.disk_total = -1;
 
         data_center_.push_back(client_data);
         id_to_idx_.insert({server_config_.servers.at(i).id,i});
